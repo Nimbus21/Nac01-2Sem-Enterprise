@@ -1,0 +1,24 @@
+﻿@model Aluno
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastrar</h1>
+
+<a asp-action="index">Lista de alunos</a>
+
+<msg texto="@TempData["msg"]"></msg>
+
+<form asp-action="cadastrar" asp-controller="aluno">
+
+    <label asp-for="Nome"></label>
+    <input asp-for="Nome" />
+
+    <label asp-for="DataNascimento"></label>
+    <input asp-for="DataNascimento" />
+
+    <input type="submit" value="Cadastrar" class="btn btn-outline-primary" />
+    <a asp-action="index" class="btn btn-outline-dark">Cancelar</a>
+</form>
+
