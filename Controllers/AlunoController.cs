@@ -13,7 +13,7 @@ namespace NAC01Enterprise.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(_alunos);
         }
 
         public IActionResult Remover(int codigo)
@@ -37,5 +37,22 @@ namespace NAC01Enterprise.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Editar(Aluno aluno) 
+        {
+            _alunos[_alunos.FindIndex(a => a.Codigo == aluno.Codigo)] = aluno;
+            TempData["msg"] = "Aluno atualizado";
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Editar(int id) 
+        {
+            var aluno = _alunos.Find(a => a.Codigo == id);
+            return View(aluno);
+        }
+
     }
 }
