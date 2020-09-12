@@ -16,9 +16,9 @@ namespace NAC01Enterprise.Controllers
             return View(_alunos);
         }
 
-        public IActionResult Remover(int codigo)
+        public IActionResult Remover(int id)
         {
-            _alunos.RemoveAt(_alunos.FindIndex(a => a.Codigo == codigo));
+            _alunos.RemoveAt(_alunos.FindIndex(a => a.Codigo == id) );
             TempData["msg"] = "Aluno removido"; // Pode tirar depois
             return RedirectToAction("Index");
         }
