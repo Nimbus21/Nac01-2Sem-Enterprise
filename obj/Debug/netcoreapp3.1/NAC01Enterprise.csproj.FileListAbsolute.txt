@@ -223,3 +223,6 @@ C:\Users\Thandy\Desktop\GIT\NAC01Enterprise1\Nac01-2Sem-Enterprise\obj\Debug\net
 C:\Users\Thandy\Desktop\GIT\NAC01Enterprise1\Nac01-2Sem-Enterprise\obj\Debug\netcoreapp3.1\Razor\Views\Turma\Index.cshtml.g.cs
 C:\Users\Thandy\Desktop\GIT\NAC01Enterprise1\Nac01-2Sem-Enterprise\obj\Debug\netcoreapp3.1\Razor\Views\Boletim\Index.cshtml.g.cs
 C:\Users\Thandy\Desktop\GIT\NAC01Enterprise1\Nac01-2Sem-Enterprise\obj\Debug\netcoreapp3.1\Razor\Views\Aluno\Cadastrar.cshtml.g.cs
+C:\Users\Thandy\Desktop\GIT\NAC01Enterprise1\Nac01-2Sem-Enterprise\obj\Debug\netcoreapp3.1\Razor\Views\Aluno\Editar.cshtml.g.cs
+C:\Users\Thandy\Desktop\GIT\NAC01Enterprise1\Nac01-2Sem-Enterprise\obj\Debug\netcoreapp3.1\Razor\Views\Aluno\_Form.cshtml.g.cs
+C:\Users\Thandy\Desktop\GIT\NAC01Enterprise1\Nac01-2Sem-Enterprise\obj\Debug\netcoreapp3.1\Razor\Views\Aluno\_Linha.cshtml.g.cs

@@ -27,7 +27,7 @@ using NAC01Enterprise.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a5f7b73c251fe0195fd4b058af771c036abc7afe", @"/Views/Turma/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fa9937d0e723fae01355a6f31cb6645f4b5e2211", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e2c48a8809edaedd2acc9937ca28b312ac4ba0e1", @"/Views/_ViewImports.cshtml")]
     public class Views_Turma_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Turma>>
     {
         #pragma warning disable 1998

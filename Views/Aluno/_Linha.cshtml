@@ -1,0 +1,13 @@
+﻿@model Aluno
+
+<tr>
+    <td>@Model.Codigo</td>
+    <td>@Model.Nome</td>
+    <td>@Model.DataNascimento.ToShortDateString() </td>
+    <td>
+        <a asp-action="editar" class="btn btn-sm btn-dark" asp-route-id="@Model.Codigo">Editar</a>
+        <button onclick="alunoId.value = @Model.Codigo" type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal">
+            Excluir
+        </button>
+    </td>
+</tr>
