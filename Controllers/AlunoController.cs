@@ -54,5 +54,15 @@ namespace NAC01Enterprise.Controllers
             return View(aluno);
         }
 
+        [HttpGet]
+        public IActionResult Pesquisar(int? id) 
+        {
+            var lista = _alunos.Where(aluno => aluno.Codigo == id || id == null).OrderBy(i => i.Nome).ToList();
+
+            return View("Index", lista);
+        
+        }
+
+
     }
 }

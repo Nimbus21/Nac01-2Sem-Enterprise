@@ -8,6 +8,14 @@
 
 @Html.ActionLink("Ir para Home", "Index", "Home")
 
+<form asp-action="index" method="get" class="form-inline">
+    <input type="number" placeholder="Coloca o id" name="id" class="form-control mr-2" />
+    <input type="submit" class="btn btn-success" value="Pesquisar" />
+</form>
+<p>Resultados encontrados: @Model.Count</p>
+
+
+
 <a asp-action="cadastrar" asp-controller="aluno">Cadastrar</a>
 
 <table class="table">
