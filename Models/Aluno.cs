@@ -18,6 +18,6 @@ namespace NAC01Enterprise.Models
         [Display(Name = "Data de Nascimento")]
         public DateTime DataNascimento { get; set; }
 
-        // public Turno turno { get; set; }
+        public Turno Turno { get; set; }
     }
 }
