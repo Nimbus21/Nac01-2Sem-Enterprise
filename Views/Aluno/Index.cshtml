@@ -4,12 +4,14 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Alunos cadastrados: @ViewBag.total </h1>
 
-@Html.ActionLink("Ir para Home", "Index", "Home")
+<p>*Clique em pesquisar sem nenhum valor inserido para mostrar todos os alunos</p>
+
+<msg texto="@TempData["msg"]"></msg>
 
 <form asp-action="index" method="get" class="form-inline">
-    <input type="number" placeholder="Coloca o id" name="id" class="form-control mr-2" />
+    <input type="number" placeholder="Pesquisa por código" name="id" class="form-control mr-2" />
     <input type="submit" class="btn btn-success" value="Pesquisar" />
 </form>
 <p>Resultados encontrados: @Model.Count</p>
@@ -53,6 +55,4 @@
         </div>
     </div>
 </div>
-
-<p>Aluno</p>
 

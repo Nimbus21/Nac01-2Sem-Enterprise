@@ -11,9 +11,15 @@ namespace NAC01Enterprise.Controllers
     {
         private static List<Aluno> _alunos = new List<Aluno>();
 
-        public IActionResult Index()
+        public IActionResult Index(int? id)
         {
-            return View(_alunos);
+            var lista = _alunos.Where(aluno => (aluno.Codigo == id || id == null)).OrderBy(i => i.Nome).ToList();
+
+            var qtd = _alunos.Count();
+
+            ViewBag.total = qtd;
+
+            return View(lista);
         }
 
         public IActionResult Remover(int id)
@@ -28,7 +34,13 @@ namespace NAC01Enterprise.Controllers
         {
             aluno.Codigo = _alunos.Count + 1;
             _alunos.Add(aluno);
-            TempData["msg"] = "Aluno cadastrado"; // Pode tirar depois de testar
+
+            if (_alunos.Count > 0) 
+            {
+                TempData["msg"] = "Aluno cadastrado";
+            }            
+
+             // Pode tirar depois de testar
             return RedirectToAction("Index");
         }
 
@@ -54,6 +66,7 @@ namespace NAC01Enterprise.Controllers
             return View(aluno);
         }
 
+        /*
         [HttpGet]
         public IActionResult Pesquisar(int? id) 
         {
@@ -61,7 +74,7 @@ namespace NAC01Enterprise.Controllers
 
             return View("Index", lista);
         
-        }
+        }*/
 
 
     }
